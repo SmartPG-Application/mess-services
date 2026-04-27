@@ -18,7 +18,7 @@ RUN addgroup -S pgapp && adduser -S pgapp -G pgapp
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/src ./src
 COPY package*.json ./
-RUN chown -R pgapp:pgapp /app
+RUN chown -R pgapp:pgapp /app 
 
 USER pgapp
 
