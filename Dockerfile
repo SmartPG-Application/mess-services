@@ -9,7 +9,7 @@ WORKDIR /app
 
 RUN apk update && \
     apk upgrade && \
-    npm install -g npm@latest && \
+    npm install -g npm@latest && \ 
     npm cache clean --force && \
     rm -rf /var/cache/apk/*
 
